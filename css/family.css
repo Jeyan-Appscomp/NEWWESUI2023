@@ -1,0 +1,524 @@
+.main_view {
+    width: 80%;
+    height: 25rem;
+}
+  
+.main_view img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.side_view {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+.side_view img {
+    width: 9rem;
+    height: 7rem;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+.read_more, .show_less {
+  color: #046db2;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.read_more > a, .show_less > a {
+  font-size: 15px;
+  padding: 6px 0px;
+  display: initial;
+  margin-top: 15px;
+  margin-left: 5px;
+  color: #046db2;
+  text-decoration: none;
+}
+
+.read_more > svg, .show_less > svg {
+  margin-top: -3px;
+}
+
+.family_title {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.family_title > h3 {
+  font-weight: bold;
+}
+
+.family_title > p {
+  font-weight: 500;
+  font-size: 17px;
+}
+.cat_btn {
+  padding: 10px 30px !important;
+  width: 100%;
+}
+
+.family_detail > p {
+  text-align: justify;
+  font-size: 15px;
+}
+
+.fam_value {
+  color: #f82643;
+  padding: 10px 0px;
+  font-size: 15px;
+}
+
+.img-item > a > img {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #efefef;
+  margin: 10px 10px;
+  padding: 6px 6px;
+}
+
+.card {
+  border: 1px solid transparent !important;
+}
+
+.card-wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.img-display{
+  overflow: hidden;
+}
+.img-showcase{
+  display: flex;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+.img-showcase img{
+  min-width: 100%;
+}
+.img-select {
+  display: flex;
+  justify-content: space-between;
+}
+.img-item{
+  margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+  margin-right: 0;
+}
+.img-item:hover{
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 992px){
+  .card{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1.5rem;
+  }
+  .card-wrapper{
+      height: 100%;
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+  }
+  .product-imgs{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .product-content{
+      padding-top: 0;
+  }
+}
+
+/* Tab Styles */
+
+.filter_pro_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    background: #eef0f1;
+}
+
+.filter_pro_head > h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+  font-size: 17px;
+}
+
+.filter_pro_head > h4 > span {
+  margin-right: 15px;
+}
+
+.product_items > ul {
+    border-bottom: 2px solid #efefef;
+    padding-bottom: 10px;
+}
+
+.pro_item > button {
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+}
+
+.pro_item > button.nav-link.active {
+  background: none;
+  color: #000;
+  border-bottom: 3px solid #f82643;
+  border-radius: 0;
+  font-weight: bold;
+}
+
+.filter_products_by {
+    box-shadow: 0px 1px 4px 2px #efefef;
+}
+
+/* Grid / List View Styles */
+
+    span.list_view > svg, span.detailed_view > svg {
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+    }
+
+    span.grid_view > svg {
+        height: 25px;
+        width: 25px;
+        display: inline-block;
+    }
+
+    .right_sort {
+        display: flex;
+    }
+
+    .erp_pro_detail, .sub_erp_pro_detail {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #efefef;
+      padding: 25px 25px;
+  }
+
+  .view_pro_details {
+    padding: 15px 0px;
+}
+
+.erp_order_code, .erp_pro_avail {
+  font-size: 15px;
+}
+
+.view_pro_details > a {
+  text-decoration: none;
+  font-size: 14px;
+}
+.erp_float_right {
+  display: grid;
+  align-items: center;
+}
+
+  .erp_float_left {
+    display: flex;
+}
+
+.erp_fnc {
+  /* display: flex; */
+  align-items: center;
+}
+
+.fam_qty {
+  margin-top: 15px !important;
+}
+
+.erp_qty {
+  margin: 0px 0px;
+}
+
+.erp_pro_desc {
+  /* box-shadow: 0px 1px 4px 2px #efefef; */
+  margin-top: 30px;
+}
+
+.erp_pro_image > img {
+  width: 150px;
+}
+
+.erp_pro_price {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.erp_pro_avail > span {
+  color: #339933;
+  font-weight: 700;
+}
+
+.erp_pro_table > table > tbody > tr > td {
+  border: 1px solid #efefef;
+  padding: 5px 15px;
+  width: 150px;
+  font-size: 15px;
+}
+
+.erp_pro_head {
+  background: #eef0f1;
+  padding: 19px 25px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.fav_icon.figure_card > button, .figure_card1 > button {
+  padding: 0;
+}
+
+.figure_card1 > button {
+  margin-left: 10px;
+}
+
+.fam_avail {
+  padding: 10px 0px;
+  font-size: 15px;
+}
+
+.detail-box.featured > h5 {
+  margin: 0;
+}
+
+span.in_stock {
+  color: #008600;
+  font-weight: 600;
+}
+
+.fam_avail > .code {
+  font-weight: 600;
+}
+
+.item_spec {
+  padding: 20px 20px;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+}
+
+/* Select Styles */
+
+.filter_options {
+    background: #f9f9f9;
+    padding: 30px 30px;
+    border: 1px solid #efefef;
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #e5e5e5;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 22px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid black;
+    border-color: #000 transparent transparent transparent;
+}
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #000 transparent;
+    top: 15px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div, .select-selected {
+    color: #000000;
+    padding: 10px 10px;
+    /* border: 1px solid #f7f7f7; */
+    cursor: pointer;
+    user-select: none;
+}
+
+.select-items div {
+    border-radius: 0px;
+}
+
+.list_view_item {
+  position: relative;
+}
+
+.list_view_item_price {
+  top: -288px !important;
+}
+
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  /* Detailed View */
+  ._image > img {
+    width: 70px;
+}
+
+.figure_card1 .btn-hover-price, .figure_card .btn-hover-heart {
+  left: 0px !important; 
+}
+
+.erp_pro_status {
+  justify-self: center;
+  /* margin-left: 25px; */
+  position: relative;
+}
+
+#listview_btn {
+  color: red;
+  margin-top: -1px;
+}
+
+td.grey {
+  background: #f5f5f5;
+}
+
+.erp_detailed_view > table,
+.sub_erp_detailed_view > table {
+  width: 100%;
+  border: 1px solid #ebebeb;
+}
+
+.erp_detailed_view > table > thead,
+.sub_erp_detailed_view > table > thead {
+  background: #eef0f1;
+}
+
+.erp_detailed_view > table > thead > tr > td,
+.sub_erp_detailed_view > table > thead > tr > td {
+  padding: 19px 5px;
+  font-weight: 600;
+}
+
+.erp_detailed_view > table > tbody > tr {
+  vertical-align: middle;
+}
+
+.erp_grid_view, .erp_detailed_view {
+  margin-top: 30px;
+}
+
+.erp_detailed_view {
+  overflow: auto;
+  font-size: 15px;
+}
+
+.detail-box.featured > h6 {
+  font-size: 16px;
+  text-transform: initial !important;
+  color: #0075d3;
+  font-weight: 700 !important;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 55px;
+  font-family: 'Roboto';
+}
+
+.ms-options{
+  min-height: 200px; max-height: 507px;display: none;
+}
+
+.grid_wrapper > .erp_pro_detail,
+.sub_grid_wrapper > .sub_erp_pro_detail {
+  display: block;
+}
+
+.grid_wrapper > .row > .erp_pro_detail  > .erp_float_left,
+.sub_grid_wrapper > .row > .sub_erp_pro_detail  > .erp_float_left {
+  display: block;
+}
+
+.grid_wrapper > .row >  .erp_pro_detail >  .erp_float_right,
+.sub_grid_wrapper > .row >  .sub_erp_pro_detail >  .erp_float_right {
+  display: block;
+}
+
+.grid_wrapper > .row > .erp_pro_detail  > .erp_float_right > .erp_pro_status,
+.sub_grid_wrapper > .row > .sub_erp_pro_detail  > .erp_float_right > .erp_pro_status {
+  margin: 0;
+}
+
+.grid_wrapper > .row > .erp_pro_detail  > .erp_float_right > .erp_fnc,
+.sub_grid_wrapper > .row > .sub_erp_pro_detail  > .erp_float_right > .erp_fnc {
+  display: block;
+}
+
+.grid_wrapper > .row > .erp_pro_detail  > .erp_float_right > .erp_fnc > .erp_qty > .rp-qty-box > .fam_qty,
+.sub_grid_wrapper > .row > .sub_erp_pro_detail  > .erp_float_right > .erp_fnc > .erp_qty > .rp-qty-box > .fam_qty {
+  display: flex;
+  margin-top: 7px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.grid_wrapper  > .row > .erp_pro_detail > .erp_float_left > .erp_pro_status > .d_flex_status,
+.sub_grid_wrapper  > .row > .sub_erp_pro_detail > .erp_float_left > .erp_pro_status > .d_flex_status {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid_wrapper > .row > .erp_pro_detail  > .erp_float_left > .erp_pro_status > .erp_order_code,
+.sub_grid_wrapper > .row > .sub_erp_pro_detail  > .erp_float_left > .erp_pro_status > .erp_order_code {
+  margin-top: 10px;
+}
+
+.grid_wrapper > .row > .erp_pro_detail  > .erp_float_left > .erp_pro_status > .erp_pro_avail, 
+.sub_grid_wrapper > .row > .sub_erp_pro_detail  > .erp_float_left > .erp_pro_status > .erp_pro_avail {
+  margin-bottom: 10px;
+}
+
+.grid_wrapper > .row > .erp_pro_detail, .sub_grid_wrapper > .row > .sub_erp_pro_detail {
+  display: block;
+  padding: 15px 15px;
+}
+
+.list_wrapper > .row > .erp_pro_detail  > .erp_float_left > .erp_pro_status > .detail-box.featured > h6,
+.sub_list_wrapper > .row > .sub_erp_pro_detail  > .erp_float_left > .erp_pro_status > .detail-box.featured > h6 {
+  height: auto;
+}

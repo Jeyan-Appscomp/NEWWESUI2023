@@ -1,0 +1,196 @@
+.read_more > a {
+  font-size: 15px;
+  padding: 6px 0px;
+  display: initial;
+  margin-top: 15px;
+  margin-left: 10px;
+  text-decoration: none;;
+  color: #046db2;
+}
+
+
+.family_details {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.family_title {
+  margin-bottom: 15px;
+}
+
+/* Tab Styles */
+
+.related_pro_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.related_pro_head > h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+}
+
+.related_pro_head > h4 > span {
+  margin-right: 15px;
+}
+
+
+/* Grid / List View Styles */
+
+.erp_fnc {
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item_details_right > span {
+  font-size: 14px;
+}
+
+.item_details_left {
+  padding-right: 35px !important;
+}
+
+
+
+.erp_pro_desc {
+  /* box-shadow: 0px 1px 4px 2px #efefef; */
+  margin-top: 30px;
+}
+
+.erp_pro_head {
+  background: #eef0f1;
+  padding: 10px 25px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* Select Styles */
+
+
+  /* Detailed View */
+
+
+/* Item Grid CSS */
+
+table.prc_optn > thead {
+  background: #eef0f1;
+  text-align: center;
+}
+
+.table.prc_optn > tbody > tr > td, .table.prc_optn > thead > tr > td {
+  border: 1px solid #e7e7e7;
+  text-align: center;
+  padding: 3px 15px;
+  font-size: 14px;
+}
+
+ .item_price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.erp_qty1 {
+  margin-right: 5px;
+}
+
+span.prc_hghlt {
+  border: 1px solid #1c8fd7;
+  width: 50px;
+  display: block;
+  border-radius: 5px;
+  color: #1c8fd7;
+  margin: auto;
+}
+
+.item_spec {
+  padding: 20px 20px;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+}
+
+.table.spec_tbl > tbody > tr > td {
+  border: 1px solid #e9e9e9;
+  font-size: 14px;
+  padding: 4px 15px;
+}
+
+.spec_table > h5, .table.spec_tbl > thead > tr > td {
+  background: #eef0f1;
+  font-size: 16px;
+  padding: 11px 15px;
+  margin-bottom: 0;
+  border: 1px solid #efefef;
+}
+
+.spec_tbl > thead > tr > td > h5 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.details_content, .item_spec {
+  font-size: 15px;
+}
+
+.grid_wrapper > .erp_pro_detail,
+.sub_grid_wrapper > .sub_erp_pro_detail {
+  display: block;
+}
+
+.grid_wrapper > .row > .erp_pro_detail  > .erp_float_left,
+.sub_grid_wrapper > .row > .sub_erp_pro_detail  > .erp_float_left {
+  display: block;
+}
+
+.grid_wrapper > .row >  .erp_pro_detail >  .erp_float_right,
+.sub_grid_wrapper > .row >  .sub_erp_pro_detail >  .erp_float_right {
+  display: block;
+}
+
+.grid_wrapper > .row > .erp_pro_detail  > .erp_float_right > .erp_pro_status,
+.sub_grid_wrapper > .row > .sub_erp_pro_detail  > .erp_float_right > .erp_pro_status {
+  margin: 0;
+}
+
+.grid_wrapper > .row > .erp_pro_detail  > .erp_float_right > .erp_fnc,
+.sub_grid_wrapper > .row > .sub_erp_pro_detail  > .erp_float_right > .erp_fnc {
+  display: block;
+}
+
+.grid_wrapper > .row > .erp_pro_detail  > .erp_float_right > .erp_fnc > .erp_qty > .rp-qty-box > .fam_qty,
+.sub_grid_wrapper > .row > .sub_erp_pro_detail  > .erp_float_right > .erp_fnc > .erp_qty > .rp-qty-box > .fam_qty {
+  display: flex;
+  margin-top: 7px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.grid_wrapper  > .row > .erp_pro_detail > .erp_float_left > .erp_pro_status > .d_flex_status,
+.sub_grid_wrapper  > .row > .sub_erp_pro_detail > .erp_float_left > .erp_pro_status > .d_flex_status {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid_wrapper > .row > .erp_pro_detail  > .erp_float_left > .erp_pro_status > .erp_order_code,
+.sub_grid_wrapper > .row > .sub_erp_pro_detail  > .erp_float_left > .erp_pro_status > .erp_order_code {
+  margin-top: 10px;
+}
+
+.grid_wrapper > .row > .erp_pro_detail  > .erp_float_left > .erp_pro_status > .erp_pro_avail, 
+.sub_grid_wrapper > .row > .sub_erp_pro_detail  > .erp_float_left > .erp_pro_status > .erp_pro_avail {
+  margin-bottom: 10px;
+}
+
+.grid_wrapper > .row > .erp_pro_detail, .sub_grid_wrapper > .row > .sub_erp_pro_detail {
+  display: block;
+  padding: 15px 15px;
+}
+
+.list_wrapper > .row > .erp_pro_detail  > .erp_float_left > .erp_pro_status > .detail-box.featured > h6,
+.sub_list_wrapper > .row > .sub_erp_pro_detail  > .erp_float_left > .erp_pro_status > .detail-box.featured > h6 {
+  height: auto;
+}

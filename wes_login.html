@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <link rel="icon" href="images/logo.png" type="image/gif" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>WES</title>
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css" />
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet" />
+    <link href="css/Sidenav.css" rel="stylesheet" />
+    <!-- Category Menu styles for this template -->
+    <link href="css/category-menu.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <!-- CSS only -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+ </head>
+ <style>
+   .bg_clr{
+      color: rgb(120, 120, 120);
+      padding-top: 10%;
+     
+
+      
+   }
+   .btn.btn-danger.danger {
+	width: 285px;
+	padding: 4%;
+	background-color: #f82643;
+   margin-top: 7%;
+}
+.btn.btn-danger.dangers {
+	width: 285px;
+	padding: 4%;
+	background-color: #f82643;
+  
+}
+   #username {
+	padding: 4%;
+	background-color: #f8f8f8;
+}
+#password{
+   
+	padding: 4%;
+	background-color: #f8f8f8;
+
+}
+   .flex{
+      width: 400px;
+      border: 2px solid rgb(216, 215, 215);
+      height: 415px;
+      padding: 13%;
+      border-radius: 2%;
+   }
+   .flexs{
+      width: 400px;
+      border: 2px solid rgb(216, 215, 215);
+      height: 415px;
+      padding: 10%;
+      text-align: center;
+      background-color: rgb(247, 247, 247);
+      border-radius: 2%;
+      
+   }
+
+   .col-lg-3 {
+	flex: 0 0 auto;
+	width: 27% !important;
+}
+
+ a:hover {
+	color: #fff !important;
+}
+    
+      .nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+    padding: 0 20px;
+    color: white;
+	font-size:medium;
+	font-weight: 700px;
+}
+
+.nav__links li a:hover{
+    color: #fff;
+}
+.align{
+   text-align: center;
+   padding-top: 40px;
+}
+.cont_cont{
+   text-align: center;
+   padding-top: 4%;
+   padding-bottom: 4%;
+}
+.btn.btn-danger {
+	background-color: #f82643;
+	border-color: white;
+}
+
+</style>
+ <header class="header_section">
+    <div class="container">
+       <nav class="navbar navbar-expand-lg custom_nav-container pt-0 pb-0">
+          <div class="col-lg-12 row" style="align-items: center;">
+             <div class="col-lg-2 header_logo">
+                <a href="index.html" class="top-logo">
+                <img src="./images/logo_trans.png">
+                </a>
+             </div>
+             <div class="col-lg-10">
+                <div class="top_bar1">
+                   
+                   <div class="" id="navbarSupportedContent1" style="margin-bottom: 10px;">
+                      
+                      </ul>
+                   </div>
+                </div>
+
+                <nav style="text-align: end;">
+                  <ul class="nav__links">
+                      <li>
+                          <a href="#">Catalogues</a>
+                          <a href="#">About Us</a>
+                          <a href="#">Our Brands</a>
+                          <a href="#">Contact Us</a>
+                          <a href="#">Register</a>
+                          <span><button class="btn btn-danger" class="login"><img src="./images/wes/user.png">&nbsp;Login</div></span>
+                      </li>
+                  </ul>
+              </nav>
+                
+             </div>
+          </div>
+       </nav>
+    </div>
+ </header>
+ <header class="mobile">
+   <div class="r1">
+
+      <div class="mobile_left">
+         <div class="menu-main">
+            <a onclick="openNav()" class="nav-link" href="#"><i class="fa fa-bars"></i> MENU </a>
+      </div>
+      
+      <div class="header_logo">
+         <a href="index.html" class="top-logo">
+            <img src="./images/logo_trans.png">
+         </a>
+      </div>
+      </div>
+     
+      <div class="mobile_search_1">
+         <input type="text" class="search-products form-control" placeholder="Search. Enter keywords or Product No's">
+         <button class="btn btn-search">Search</button>
+      </div>
+
+      <div class="mobile_right">
+         <div class="mobile_search">
+            <input type="text" name="search" placeholder="Search..">
+            <span>Search</span>
+         </div>
+
+         <div class="dropdown">
+            <button class="dropbtn mbl_acc"> 
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+               </svg>
+                  <span> My Account </span> 
+            </button>
+
+            <div class="dropdown-content">
+               <nav style="text-align: end;">
+                  <ul class="nav__links">
+                      <li>
+                          <a href="#">Catalogues</a>
+                          <a href="#">About Us</a>
+                          <a href="#">Our Brands</a>
+                          <a href="#">Contact Us</a>
+                          <a href="#">Register</a>
+                         <span><div class="btn btn- clr"><svg xmlns="http://www.w3.org/2000/svg"class="login" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>&nbsp;Log in</div></span>
+                      </li>
+                  </ul>
+              </nav>
+
+             
+               
+               
+
+               
+            </div>
+         </div>
+
+         
+      </div>
+    
+   </div>
+</header>
+<body>
+
+  
+     <div class="section_sec" style="padding-bottom: 25%;">
+      <div class="cont_cont">
+         <h3>WES Customer Login</h3>
+         <p style="color: rgb(164, 164, 164);">Please Sign In using your Email ID or User Name and Password below:</p>
+      </div>
+
+    <div class='row justify-content-md-center'>
+
+   <div class='col-lg-3 col-md-3 col-12'>
+      <div class="flex">
+         <h4 style="padding-bottom: 3%;color:rgb(125, 125, 125);">Log In</h4>
+         <form>
+          <div class="mb-3">
+           
+            <input type="Username" class="form-control" id="username" placeholder="Username / Email Address"aria-describedby="username">
+            </div>
+          <div class="mb-3">
+           
+            <input type="password" class="form-control" id="password"placeholder="Password" >
+          </div>
+          <p style="color: rgb(164, 164, 164);">Forgotton Password</p>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1" style="color: rgb(164, 164, 164);">Remember me</label>
+          </div>
+
+          <button type="submit" class="btn btn-danger danger">Login</button>
+        </form>
+      </div>
+      </div>
+     
+      <div class='col-lg-4 col-md-2 col-12'>
+         <div class="flexs">
+         <h3 class="bg_clr">New Customer</h3>
+         <p style="color: rgb(116, 116, 116);">Apply for Online Access For WES</p>
+
+         <button type="submit" class="btn btn-danger dangers">Register</button>
+      </div>
+      </div>
+     
+     <div>
+     
+     </div>
+     </div>
+     </div>
+     
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="info_section layout_padding2" style="padding-bottom: 25px;">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-3">
+            <div class="abt-wes">
+               <div class="footer-logo">
+                  <img src="images/footer_logo.png">
+                  <h5>WES Alliance Pty Ltd</h5>
+                  <p>84-90 Parramatta Road, <br>
+                     Summer Hill, NSW, 2130 <br>
+                     Australia
+                  </p>
+               </div>
+            </div>
+            <div class="copy">
+               <p>
+                  &copy; Copyright WES Alliance 2022</a>
+               </p>
+            </div>
+         </div>
+         <div class="col-md-3">
+            <div class="info_info">
+               <h5>Categories</h5>
+               <div class="cat-links">
+                  <a href="#">New Products</a>
+                  <a href="#">Run Out Products</a>
+                  <a href="#">AV TV SAT Installation</a>
+                  <a href="#">Cables & Connectors</a>
+                  <a href="#">Audio Speakers & PA</a>
+                  <a href="#">Data & Computer</a>
+                  <a href="#">Security</a>
+                  <a href="#">Cellular Accessories</a>
+                  <a href="#">Communications Acc.</a>
+                  <a href="#">Tools & Test</a>
+                  <a href="#">Power & Lighting</a>
+                  <a href="#">Automotive</a>
+                  <a href="#">Electronic Components</a>
+                  <a href="#">Service & Repair Parts</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3">
+            <div class="info_info">
+               <h5>Customer Service</h5>
+               <div class="cat-links">
+                  <a href="#">Contact Us</a>
+                  <a href="#">About Us</a>
+                  <a href="#">My Account</a>
+                  <a href="#">Quick Order</a>
+                  <a href="#">Catalogue Download</a>
+                  <a href="#">Terms & Conditions</a>
+                  <a href="#">Job Enquiries</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-2">
+            <div class="info_form ">
+               <h5>
+                  Follow Us
+               </h5>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</body>
+</html>
+   
